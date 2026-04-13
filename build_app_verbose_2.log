@@ -1,0 +1,509 @@
+
+> nx run app:build:production
+
+[33m❯[39m Building...
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json"
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json"
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json"
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json"
+1 error
+✘ [ERROR] Angular compilation emit failed. [plugin angular-compiler]
+  AssertionError [ERR_ASSERTION]: compilerOptions.basePath should be a string.
+      at lazyRoutesTransformer (/app/node_modules/.pnpm/@angular+build@20.3.15_b609ef51f2994416889d02eabc4184a0/node_modules/@angular/build/src/tools/angular/transformers/lazy-routes-transformer.js:49:31)
+      at AotCompilation.emitAffectedFiles (/app/node_modules/.pnpm/@angular+build@20.3.15_b609ef51f2994416889d02eabc4184a0/node_modules/@angular/build/src/tools/angular/compilation/aot-compilation.js:235:90)
+      at emit (/app/node_modules/.pnpm/@angular+build@20.3.15_b609ef51f2994416889d02eabc4184a0/node_modules/@angular/build/src/tools/angular/compilation/parallel-worker.js:95:37)
+      at onMessage (/app/node_modules/.pnpm/piscina@5.1.3/node_modules/piscina/dist/worker.js:180:28)
+✘ [ERROR] TS500: Error: ENOENT: no such file or directory, lstat '/app/tsconfig.app.json'
+    at Object.lstatSync (node:fs:1722:25)
+    at NodeJSFileSystem.lstat (file:///app/node_modules/.pnpm/@angular+compiler-cli@20.3.16_@angular+compiler@20.3.16_typescript@5.9.3/node_modules/@angular/compiler-cli/bundles/chunk-XYYEESKY.js:73:15)
+    at calcProjectFileAndBasePath (file:///app/node_modules/.pnpm/@angular+compiler-cli@20.3.16_@angular+compiler@20.3.16_typescript@5.9.3/node_modules/@angular/compiler-cli/bundles/chunk-VLDYFQRU.js:5528:29)
+    at readConfiguration (file:///app/node_modules/.pnpm/@angular+compiler-cli@20.3.16_@angular+compiler@20.3.16_typescript@5.9.3/node_modules/@angular/compiler-cli/bundles/chunk-VLDYFQRU.js:5554:39)
+    at /app/node_modules/.pnpm/@angular+build@20.3.15_b609ef51f2994416889d02eabc4184a0/node_modules/@angular/build/src/tools/angular/compilation/angular-compilation.js:71:69
+    at profileSync (/app/node_modules/.pnpm/@angular+build@20.3.15_b609ef51f2994416889d02eabc4184a0/node_modules/@angular/build/src/tools/esbuild/profiling.js:68:16)
+    at AotCompilation.loadConfiguration (/app/node_modules/.pnpm/@angular+build@20.3.15_b609ef51f2994416889d02eabc4184a0/node_modules/@angular/build/src/tools/angular/compilation/angular-compilation.js:71:44)
+    at async AotCompilation.initialize (/app/node_modules/.pnpm/@angular+build@20.3.15_b609ef51f2994416889d02eabc4184a0/node_modules/@angular/build/src/tools/angular/compilation/aot-compilation.js:62:100)
+    at async initialize (/app/node_modules/.pnpm/@angular+build@20.3.15_b609ef51f2994416889d02eabc4184a0/node_modules/@angular/build/src/tools/angular/compilation/parallel-worker.js:38:88)
+    at async onMessage (/app/node_modules/.pnpm/piscina@5.1.3/node_modules/piscina/dist/worker.js:180:22) [plugin angular-compiler]
+▲ [WARNING] TypeScript compiler options 'module' values 'CommonJS', 'UMD', 'System' and 'AMD' are not supported. [plugin angular-compiler]
+  The 'module' option will be set to 'ES2022' instead.
+▲ [WARNING] TypeScript compiler options 'target' and 'useDefineForClassFields' are set to 'ES2022' and 'false' respectively by the Angular CLI. [plugin angular-compiler]
+    tsconfig.app.json:0:0:
+      0 │ 
+        ╵ ^
+  To control ECMA version and features use the Browserslist configuration. For more information, see https://angular.dev/tools/cli/build#configuring-browser-compatibility
+● [DEBUG] Failed to read directory "/app/src/main.ts": open /app/src: no such file or directory
+● [DEBUG] Resolving import "/app/src/main.ts" in directory "/app" of type "entry-point"
+  Read 25 entries for directory "/"
+  The file "/app/package.json" exists
+  The file "/app/tsconfig.json" exists
+  Read 18 entries for directory "/app"
+  Read 18 entries for directory "/app"
+  The import "/app/src/main.ts" is being treated as an absolute path
+  Matching "/app/src/main.ts" against "paths" in "/app/tsconfig.json"
+    Using "/app" as "baseUrl"
+  Attempting to load "/app/src/main.ts" as a file
+    Failed to read directory "/app/src": open /app/src: no such file or directory
+  Attempting to load "/app/src/main.ts" as a directory
+    Read 18 entries for directory "/app"
+    Failed to read directory "/app/src": open /app/src: no such file or directory
+    Failed to read directory "/app/src"
+    Failed to read directory "/app/src/main.ts"
+✘ [ERROR] Could not resolve "/app/src/main.ts"
+2 warnings and 4 errors
+▲ [WARNING] TypeScript compiler options 'module' values 'CommonJS', 'UMD', 'System' and 'AMD' are not supported. [plugin angular-compiler]
+  The 'module' option will be set to 'ES2022' instead.
+▲ [WARNING] TypeScript compiler options 'target' and 'useDefineForClassFields' are set to 'ES2022' and 'false' respectively by the Angular CLI. [plugin angular-compiler]
+    tsconfig.app.json:0:0:
+      0 │ 
+        ╵ ^
+  To control ECMA version and features use the Browserslist configuration. For more information, see https://angular.dev/tools/cli/build#configuring-browser-compatibility
+▲ [WARNING] TypeScript compiler options 'module' values 'CommonJS', 'UMD', 'System' and 'AMD' are not supported. [plugin angular-compiler]
+  The 'module' option will be set to 'ES2022' instead.
+▲ [WARNING] TypeScript compiler options 'target' and 'useDefineForClassFields' are set to 'ES2022' and 'false' respectively by the Angular CLI. [plugin angular-compiler]
+    tsconfig.app.json:0:0:
+      0 │ 
+        ╵ ^
+  To control ECMA version and features use the Browserslist configuration. For more information, see https://angular.dev/tools/cli/build#configuring-browser-compatibility
+● [DEBUG] Resolving import "./src/server" in directory "/app" of type "import-statement"
+  Checking "./src/server" against the external pattern "*/main.server.mjs"
+  Read 25 entries for directory "/"
+  The file "/app/package.json" exists
+  The file "/app/tsconfig.json" exists
+  Read 18 entries for directory "/app"
+  Read 18 entries for directory "/app"
+  Read 18 entries for directory "/app"
+  Failed to read directory "/app/src": open /app/src: no such file or directory
+  Failed to read directory "/app/src"
+  Attempting to load "/app/src/server" as a file
+    Failed to read directory "/app/src": open /app/src: no such file or directory
+  Attempting to load "/app/src/server" as a directory
+    Failed to read directory "/app/src"
+    Failed to read directory "/app/src/server"
+✘ [ERROR] Could not resolve "./src/server"
+    angular:ssr-entry:angular:ssr-entry:2:24:
+      2 │ import * as server from './src/server';
+        ╵                         ~~~~~~~~~~~~~~
+● [DEBUG] Resolving import "./src/main.server" in directory "/app" of type "import-statement"
+  Read 18 entries for directory "/app"
+  Read 18 entries for directory "/app"
+  Failed to read directory "/app/src": open /app/src: no such file or directory
+  Failed to read directory "/app/src"
+  Attempting to load "/app/src/main.server" as a file
+    Failed to read directory "/app/src": open /app/src: no such file or directory
+  Attempting to load "/app/src/main.server" as a directory
+    Failed to read directory "/app/src"
+    Failed to read directory "/app/src/main.server"
+✘ [ERROR] Could not resolve "./src/main.server"
+    angular:main-server:angular:main-server:8:24:
+      8 │ export { default } from './src/main.server';
+        ╵                         ~~~~~~~~~~~~~~~~~~~
+● [DEBUG] Lookbehind assertions in regular expressions are not available in the configured target environment ("chrome107.0", "edge107.0", "firefox104.0", "ios16.0", "node24.0.0", "safari16.0" + 2 overrides) [unsupported-regexp]
+    node_modules/.pnpm/@angular+ssr@20.3.15_7185bc451ec71971c60f6b31517607f6/node_modules/@angular/ssr/fesm2022/ssr.mjs:915:31:
+      915 │ const URL_PARAMETER_REGEXP = /(?<!\\):([^/]+)/g;
+          ╵                                ~~~
+  This regular expression literal has been converted to a "new RegExp()" constructor to avoid generating code with a syntax error. However, you will need to include a polyfill for "RegExp" for your code to have the correct behavior at run-time.
+● [DEBUG] Lookbehind assertions in regular expressions are not available in the configured target environment ("chrome107.0", "edge107.0", "firefox104.0", "ios16.0", "node24.0.0", "safari16.0" + 2 overrides) [unsupported-regexp]
+    node_modules/.pnpm/@angular+ssr@20.3.15_7185bc451ec71971c60f6b31517607f6/node_modules/@angular/ssr/fesm2022/ssr.mjs:915:31:
+      915 │ const URL_PARAMETER_REGEXP = /(?<!\\):([^/]+)/g;
+          ╵                                ~~~
+  This regular expression literal has been converted to a "new RegExp()" constructor to avoid generating code with a syntax error. However, you will need to include a polyfill for "RegExp" for your code to have the correct behavior at run-time.
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/core.mjs:17:7:
+      17 │ import 'rxjs';
+         ╵        ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router.mjs:11:7:
+      11 │ import 'rxjs';
+         ╵        ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+platform-server@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular_f6fc01465d4d2156db14fc0d9875d463/node_modules/@angular/platform-server/fesm2022/platform-server.mjs:13:7:
+      13 │ import 'rxjs';
+         ╵        ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router.mjs:11:7:
+      11 │ import 'rxjs';
+         ╵        ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/core.mjs:17:7:
+      17 │ import 'rxjs';
+         ╵        ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router.mjs:12:7:
+      12 │ import 'rxjs/operators';
+         ╵        ~~~~~~~~~~~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/core.mjs:20:7:
+      20 │ import 'rxjs/operators';
+         ╵        ~~~~~~~~~~~~~~~~
+● [DEBUG] Lookbehind assertions in regular expressions are not available in the configured target environment ("chrome107.0", "edge107.0", "firefox104.0", "ios16.0", "node24.0.0", "safari16.0" + 2 overrides) [unsupported-regexp]
+    node_modules/.pnpm/@angular+ssr@20.3.15_7185bc451ec71971c60f6b31517607f6/node_modules/@angular/ssr/third_party/beasties/index.js:10508:48:
+      10508 │ ...doClassesAndElementsPattern = /(?<!\\)::?[a-z-]+(?:\(.+\))?/gi;
+            ╵                                    ~~~
+  This regular expression literal has been converted to a "new RegExp()" constructor to avoid generating code with a syntax error. However, you will need to include a polyfill for "RegExp" for your code to have the correct behavior at run-time.
+● [DEBUG] Lookbehind assertions in regular expressions are not available in the configured target environment ("chrome107.0", "edge107.0", "firefox104.0", "ios16.0", "node24.0.0", "safari16.0" + 2 overrides) [unsupported-regexp]
+    node_modules/.pnpm/@angular+ssr@20.3.15_7185bc451ec71971c60f6b31517607f6/node_modules/@angular/ssr/third_party/beasties/index.js:10803:51:
+      10803 │ ...nst beastiesComment = rule.text.match(/^(?<!! )beasties:(.*)/);
+            ╵                                             ~~~
+  This regular expression literal has been converted to a "new RegExp()" constructor to avoid generating code with a syntax error. However, you will need to include a polyfill for "RegExp" for your code to have the correct behavior at run-time.
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router.mjs:12:7:
+      12 │ import 'rxjs/operators';
+         ╵        ~~~~~~~~~~~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/core.mjs:20:7:
+      20 │ import 'rxjs/operators';
+         ╵        ~~~~~~~~~~~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+platform-server@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular_f6fc01465d4d2156db14fc0d9875d463/node_modules/@angular/platform-server/fesm2022/platform-server.mjs:13:7:
+      13 │ import 'rxjs';
+         ╵        ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/common.mjs:14:7:
+      14 │ import 'rxjs';
+         ╵        ~~~~~~
+● [DEBUG] Lookbehind assertions in regular expressions are not available in the configured target environment ("chrome107.0", "edge107.0", "firefox104.0", "ios16.0", "node24.0.0", "safari16.0" + 2 overrides) [unsupported-regexp]
+    node_modules/.pnpm/@angular+ssr@20.3.15_7185bc451ec71971c60f6b31517607f6/node_modules/@angular/ssr/third_party/beasties/index.js:10508:48:
+      10508 │ ...doClassesAndElementsPattern = /(?<!\\)::?[a-z-]+(?:\(.+\))?/gi;
+            ╵                                    ~~~
+  This regular expression literal has been converted to a "new RegExp()" constructor to avoid generating code with a syntax error. However, you will need to include a polyfill for "RegExp" for your code to have the correct behavior at run-time.
+● [DEBUG] Lookbehind assertions in regular expressions are not available in the configured target environment ("chrome107.0", "edge107.0", "firefox104.0", "ios16.0", "node24.0.0", "safari16.0" + 2 overrides) [unsupported-regexp]
+    node_modules/.pnpm/@angular+ssr@20.3.15_7185bc451ec71971c60f6b31517607f6/node_modules/@angular/ssr/third_party/beasties/index.js:10803:51:
+      10803 │ ...nst beastiesComment = rule.text.match(/^(?<!! )beasties:(.*)/);
+            ╵                                             ~~~
+  This regular expression literal has been converted to a "new RegExp()" constructor to avoid generating code with a syntax error. However, you will need to include a polyfill for "RegExp" for your code to have the correct behavior at run-time.
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/common.mjs:14:7:
+      14 │ import 'rxjs';
+         ╵        ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/http.mjs:10:19:
+      10 │ import { of } from 'rxjs';
+         ╵                    ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/http.mjs:11:20:
+      11 │ import { tap } from 'rxjs/operators';
+         ╵                     ~~~~~~~~~~~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router2.mjs:10:181:
+      10 │ ...ctableObservable, Subject, Observable, Subscription } from 'rxjs';
+         ╵                                                               ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/root_effect_scheduler.mjs:9:44:
+      9 │ import { BehaviorSubject, Observable } from 'rxjs';
+        ╵                                             ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router_module.mjs:12:34:
+      12 │ import { Subject, of, from } from 'rxjs';
+         ╵                                   ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/http.mjs:10:19:
+      10 │ import { of } from 'rxjs';
+         ╵                    ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+platform-server@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular_f6fc01465d4d2156db14fc0d9875d463/node_modules/@angular/platform-server/fesm2022/server.mjs:12:24:
+      12 │ import { Subject } from 'rxjs';
+         ╵                         ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/location.mjs:9:24:
+      9 │ import { Subject } from 'rxjs';
+        ╵                         ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router_module.mjs:12:34:
+      12 │ import { Subject, of, from } from 'rxjs';
+         ╵                                   ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/module.mjs:9:60:
+      9 │ ...oncatMap, filter, map, finalize, switchMap } from 'rxjs/operators';
+        ╵                                                      ~~~~~~~~~~~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/http.mjs:11:20:
+      11 │ import { tap } from 'rxjs/operators';
+         ╵                     ~~~~~~~~~~~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router2.mjs:11:180:
+      11 │ ..., takeLast, finalize, refCount, takeUntil } from 'rxjs/operators';
+         ╵                                                     ~~~~~~~~~~~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router_module.mjs:13:66:
+      13 │ ..., catchError, filter, concatMap, mergeMap } from 'rxjs/operators';
+         ╵                                                     ~~~~~~~~~~~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/location.mjs:9:24:
+      9 │ import { Subject } from 'rxjs';
+        ╵                         ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/root_effect_scheduler.mjs:9:44:
+      9 │ import { BehaviorSubject, Observable } from 'rxjs';
+        ╵                                             ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router_module.mjs:13:66:
+      13 │ ..., catchError, filter, concatMap, mergeMap } from 'rxjs/operators';
+         ╵                                                     ~~~~~~~~~~~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/module.mjs:10:37:
+      10 │ import { of, Observable, from } from 'rxjs';
+         ╵                                      ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router2.mjs:10:181:
+      10 │ ...ctableObservable, Subject, Observable, Subscription } from 'rxjs';
+         ╵                                                               ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router2.mjs:11:180:
+      11 │ ..., takeLast, finalize, refCount, takeUntil } from 'rxjs/operators';
+         ╵                                                     ~~~~~~~~~~~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/module.mjs:9:60:
+      9 │ ...oncatMap, filter, map, finalize, switchMap } from 'rxjs/operators';
+        ╵                                                      ~~~~~~~~~~~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/module.mjs:10:37:
+      10 │ import { of, Observable, from } from 'rxjs';
+         ╵                                      ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+platform-server@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular_f6fc01465d4d2156db14fc0d9875d463/node_modules/@angular/platform-server/fesm2022/server.mjs:12:24:
+      12 │ import { Subject } from 'rxjs';
+         ╵                         ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/debug_node.mjs:9:38:
+      9 │ import { Subject, Subscription } from 'rxjs';
+        ╵                                       ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/debug_node.mjs:11:20:
+      11 │ import { map } from 'rxjs/operators';
+         ╵                     ~~~~~~~~~~~~~~~~
+2 warnings and 21 errors
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/debug_node.mjs:9:38:
+      9 │ import { Subject, Subscription } from 'rxjs';
+        ╵                                       ~~~~~~
+✘ [ERROR] Cannot find tsconfig file "tsconfig.app.json" [plugin angular-rxjs-resolution]
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/debug_node.mjs:11:20:
+      11 │ import { map } from 'rxjs/operators';
+         ╵                     ~~~~~~~~~~~~~~~~
+2 warnings and 21 errors
+[32m✔[39m Building...
+[37m[35mPrerendered 0 static routes.[37m
+Application bundle generation failed. [1.798 seconds] - 2026-04-13T06:09:15.682Z
+[39m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mTypeScript compiler options 'module' values 'CommonJS', 'UMD', 'System' and 'AMD' are not supported.[0m [1m[35m[plugin angular-compiler][0m
+  The 'module' option will be set to 'ES2022' instead.
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mTypeScript compiler options 'target' and 'useDefineForClassFields' are set to 'ES2022' and 'false' respectively by the Angular CLI.[0m [1m[35m[plugin angular-compiler][0m
+    tsconfig.app.json:0:0:
+[37m      0 │ [32m[37m
+        ╵ [32m^[0m
+  To control ECMA version and features use the Browserslist configuration. For more information, see [4mhttps://angular.dev/tools/cli/build#configuring-browser-compatibility[0m
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mTypeScript compiler options 'module' values 'CommonJS', 'UMD', 'System' and 'AMD' are not supported.[0m [1m[35m[plugin angular-compiler][0m
+  The 'module' option will be set to 'ES2022' instead.
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mTypeScript compiler options 'target' and 'useDefineForClassFields' are set to 'ES2022' and 'false' respectively by the Angular CLI.[0m [1m[35m[plugin angular-compiler][0m
+    tsconfig.app.json:0:0:
+[37m      0 │ [32m[37m
+        ╵ [32m^[0m
+  To control ECMA version and features use the Browserslist configuration. For more information, see [4mhttps://angular.dev/tools/cli/build#configuring-browser-compatibility[0m
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mTypeScript compiler options 'module' values 'CommonJS', 'UMD', 'System' and 'AMD' are not supported.[0m [1m[35m[plugin angular-compiler][0m
+  The 'module' option will be set to 'ES2022' instead.
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mTypeScript compiler options 'target' and 'useDefineForClassFields' are set to 'ES2022' and 'false' respectively by the Angular CLI.[0m [1m[35m[plugin angular-compiler][0m
+    tsconfig.app.json:0:0:
+[37m      0 │ [32m[37m
+       [39m[22m
+[1m[33m ╵ [32m^[0m
+  To control ECMA version and features use the Browserslist configuration. For more information, see [4mhttps://angular.dev/tools/cli/build#configuring-browser-compatibility[0m
+[39m[22m
+[1m[31m[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mAngular compilation emit failed.[0m [1m[35m[plugin angular-compiler][0m
+  AssertionError [ERR_ASSERTION]: compilerOptions.basePath should be a string.
+      at lazyRoutesTransformer (/app/node_modules/.pnpm/@angular+build@20.3.15_b609ef51f2994416889d02eabc4184a0/node_modules/@angular/build/src/tools/angular/transformers/lazy-routes-transformer.js:49:31)
+      at AotCompilation.emitAffectedFiles (/app/node_modules/.pnpm/@angular+build@20.3.15_b609ef51f2994416889d02eabc4184a0/node_modules/@angular/build/src/tools/angular/compilation/aot-compilation.js:235:90)
+      at emit (/app/node_modules/.pnpm/@angular+build@20.3.15_b609ef51f2994416889d02eabc4184a0/node_modules/@angular/build/src/tools/angular/compilation/parallel-worker.js:95:37)
+      at onMessage (/app/node_modules/.pnpm/piscina@5.1.3/node_modules/piscina/dist/worker.js:180:28)
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS500: Error: ENOENT: no such file or directory, lstat '/app/tsconfig.app.json'
+    at Object.lstatSync (node:fs:1722:25)
+    at NodeJSFileSystem.lstat (file:///app/node_modules/.pnpm/@angular+compiler-cli@20.3.16_@angular+compiler@20.3.16_typescript@5.9.3/node_modules/@angular/compiler-cli/bundles/chunk-XYYEESKY.js:73:15)
+    at calcProjectFileAndBasePath (file:///app/node_modules/.pnpm/@angular+compiler-cli@20.3.16_@angular+compiler@20.3.16_typescript@5.9.3/node_modules/@angular/compiler-cli/bundles/chunk-VLDYFQRU.js:5528:29)
+    at readConfiguration (file:///app/node_modules/.pnpm/@angular+compiler-cli@20.3.16_@angular+compiler@20.3.16_typescript@5.9.3/node_modules/@angular/compiler-cli/bundles/chunk-VLDYFQRU.js:5554:39)
+    at /app/node_modules/.pnpm/@angular+build@20.3.15_b609ef51f2994416889d02eabc4184a0/node_modules/@angular/build/src/tools/angular/compilation/angular-compilation.js:71:69
+    at profileSync (/app/node_modules/.pnpm/@an[39m[22m[1m[31mgular+build@20.3.15_b609ef51f2994416889d02eabc4184a0/node_modules/@angular/build/src/tools/esbuild/profiling.js:68:16)
+    at AotCompilation.loadConfiguration (/app/node_modules/.pnpm/@angular+build@20.3.15_b609ef51f2994416889d02eabc4184a0/node_modules/@angular/build/src/tools/angular/compilation/angular-compilation.js:71:44)
+    at async AotCompilation.initialize (/app/node_modules/.pnpm/@angular+build@20.3.15_b609ef51f2994416889d02eabc4184a0/node_modules/@angular/build/src/tools/angular/compilation/aot-compilation.js:62:100)
+    at async initialize (/app/node_modules/.pnpm/@angular+build@20.3.15_b609ef51f2994416889d02eabc4184a0/node_modules/@angular/build/src/tools/angular/compilation/parallel-worker.js:38:88)
+    at async onMessage (/app/node_modules/.pnpm/piscina@5.1.3/node_modules/piscina/dist/worker.js:180:22)[0m [1m[35m[plugin angular-compiler][0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "/app/src/main.ts"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/common.mjs:14:7:
+[37m      14 │ import [32m'rxjs'[37m;
+         ╵        [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/http.mjs:10:19:
+[37m      10 │ import { of } from [32m'rxjs'[37m;
+         ╵                    [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-[39m[22m[1m[31mresolution][0m
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/http.mjs:11:20:
+[37m      11 │ import { tap } from [32m'rxjs/operators'[37m;
+         ╵                     [32m~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/location.mjs:9:24:
+[37m      9 │ import { Subject } from [32m'rxjs'[37m;
+        ╵                         [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/module.mjs:9:60:
+[37m      9 │ ...oncatMap, filter, map, finalize, switchMap } from [32m'rxjs/operators'[37m;
+        ╵                                                      [32m~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/module.mjs:10:37:
+[37m      10 │ import { of, Observable, from } from [32m'rxjs'[37m;
+         ╵                                      [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/core.mjs:17:7:
+[37m      17 │ import [39m[22m[1m[31m[32m'rxjs'[37m;
+         ╵        [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/core.mjs:20:7:
+[37m      20 │ import [32m'rxjs/operators'[37m;
+         ╵        [32m~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/debug_node.mjs:9:38:
+[37m      9 │ import { Subject, Subscription } from [32m'rxjs'[37m;
+        ╵                                       [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/debug_node.mjs:11:20:
+[37m      11 │ import { map } from [32m'rxjs/operators'[37m;
+         ╵                     [32m~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/root_effect_scheduler.mjs:9:44:
+[37m      9 │ import { BehaviorSubject, Observable } from [32m'rxjs'[37m;
+        ╵                                             [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+platform-server@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular_f6fc01465d4d2156db14fc0d9875d463/node_modules/@a[39m[22m[1m[31mngular/platform-server/fesm2022/platform-server.mjs:13:7:
+[37m      13 │ import [32m'rxjs'[37m;
+         ╵        [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+platform-server@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular_f6fc01465d4d2156db14fc0d9875d463/node_modules/@angular/platform-server/fesm2022/server.mjs:12:24:
+[37m      12 │ import { Subject } from [32m'rxjs'[37m;
+         ╵                         [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router.mjs:11:7:
+[37m      11 │ import [32m'rxjs'[37m;
+         ╵        [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router.mjs:12:7:
+[37m      12 │ import [32m'rxjs/operators'[37m;
+         ╵        [32m~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router2.mjs:10:181:
+[37m      10 │ ...ctableObservable, Subject, Observable, Subscription } from [32m'rxjs'[37m;
+         ╵                                                               [32m~~~~~~[0m
+[31m✘ [39m[22m[1m[31m[41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router2.mjs:11:180:
+[37m      11 │ ..., takeLast, finalize, refCount, takeUntil } from [32m'rxjs/operators'[37m;
+         ╵                                                     [32m~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router_module.mjs:12:34:
+[37m      12 │ import { Subject, of, from } from [32m'rxjs'[37m;
+         ╵                                   [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router_module.mjs:13:66:
+[37m      13 │ ..., catchError, filter, concatMap, mergeMap } from [32m'rxjs/operators'[37m;
+         ╵                                                     [32m~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./src/main.server"[0m
+    angular:main-server:angular:main-server:8:24:
+[37m      8 │ export { default } from [32m'./src/main.server'[37m;
+        ╵                         [32m~~~~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfi[39m[22m[1m[31mg.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/common.mjs:14:7:
+[37m      14 │ import [32m'rxjs'[37m;
+         ╵        [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/http.mjs:10:19:
+[37m      10 │ import { of } from [32m'rxjs'[37m;
+         ╵                    [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/http.mjs:11:20:
+[37m      11 │ import { tap } from [32m'rxjs/operators'[37m;
+         ╵                     [32m~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/location.mjs:9:24:
+[37m      9 │ import { Subject } from [32m'rxjs'[37m;
+        ╵                         [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/module.mjs:9:60:
+[37m      9 │ ...oncatMap, filter, map, finalize, switchMap } from [32m'rxjs/operato[39m[22m[1m[31mrs'[37m;
+        ╵                                                      [32m~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/module.mjs:10:37:
+[37m      10 │ import { of, Observable, from } from [32m'rxjs'[37m;
+         ╵                                      [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/core.mjs:17:7:
+[37m      17 │ import [32m'rxjs'[37m;
+         ╵        [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/core.mjs:20:7:
+[37m      20 │ import [32m'rxjs/operators'[37m;
+         ╵        [32m~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/debug_node.mjs:9:38:
+[37m      9 │ import { Subject, Subscription } from [32m'rxjs'[37m;
+        ╵                                       [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/debug_node.mjs:11:20:
+[37m      1[39m[22m[1m[31m1 │ import { map } from [32m'rxjs/operators'[37m;
+         ╵                     [32m~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+core@20.3.16_@angular+compiler@20.3.16_rxjs@7.8.2/node_modules/@angular/core/fesm2022/root_effect_scheduler.mjs:9:44:
+[37m      9 │ import { BehaviorSubject, Observable } from [32m'rxjs'[37m;
+        ╵                                             [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+platform-server@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular_f6fc01465d4d2156db14fc0d9875d463/node_modules/@angular/platform-server/fesm2022/platform-server.mjs:13:7:
+[37m      13 │ import [32m'rxjs'[37m;
+         ╵        [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+platform-server@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular_f6fc01465d4d2156db14fc0d9875d463/node_modules/@angular/platform-server/fesm2022/server.mjs:12:24:
+[37m      12 │ import { Subject } from [32m'rxjs'[37m;
+         ╵                         [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router.mjs:11:7:
+[37m      11 │ import [32m'rxjs'[37m;
+         ╵        [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rx[39m[22m[1m[31mjs-resolution][0m
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router.mjs:12:7:
+[37m      12 │ import [32m'rxjs/operators'[37m;
+         ╵        [32m~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router2.mjs:10:181:
+[37m      10 │ ...ctableObservable, Subject, Observable, Subscription } from [32m'rxjs'[37m;
+         ╵                                                               [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router2.mjs:11:180:
+[37m      11 │ ..., takeLast, finalize, refCount, takeUntil } from [32m'rxjs/operators'[37m;
+         ╵                                                     [32m~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolution][0m
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router_module.mjs:12:34:
+[37m      12 │ import { Subject, of, from } from [32m'rxjs'[37m;
+         ╵                                   [32m~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m [1m[35m[plugin angular-rxjs-resolutio[39m[22m[1m[31mn][0m
+    node_modules/.pnpm/@angular+router@20.3.16_@angular+common@20.3.16_@angular+core@20.3.16_@angular+compiler_69a033a3da910c1294dd15be27d97caf/node_modules/@angular/router/fesm2022/router_module.mjs:13:66:
+[37m      13 │ ..., catchError, filter, concatMap, mergeMap } from [32m'rxjs/operators'[37m;
+         ╵                                                     [32m~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./src/server"[0m
+    angular:ssr-entry:angular:ssr-entry:2:24:
+[37m      2 │ import * as server from [32m'./src/server'[37m;
+        ╵                         [32m~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "src/styles.scss"[0m
+    angular:styles/global:styles:1:8:
+[37m      1 │ @import [32m'src/styles.scss'[37m;
+        ╵         [32m~~~~~~~~~~~~~~~~~[0m
+  You can mark the path "src/styles.scss" as external to exclude it from the bundle, which will remove this error and leave the unresolved path in the bundle.
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCannot find tsconfig file "tsconfig.app.json"[0m
+[39m[22m
+
+
+
+ NX   Running target build for project app failed
+
+Failed tasks:
+
+- app:build:production
+
+Hint: run the command with --verbose for more details.
+
