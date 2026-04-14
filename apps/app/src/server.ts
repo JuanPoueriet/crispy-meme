@@ -22,7 +22,7 @@ const angularApp = new AngularNodeAppEngine();
 app.use(compression());
 
 // --- SEGURIDAD: Rate Limiting ---
-const limiter = rateLimit({
+const limiter = (rateLimit as any)({
 	windowMs: 15 * 60 * 1000, // 15 minutos
 	max: 100, // Límite de 100 peticiones por IP por ventana
 	standardHeaders: true, // Devuelve info en cabeceras `RateLimit-*`
